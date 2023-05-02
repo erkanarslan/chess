@@ -1,0 +1,18 @@
+- Chess board and pieces on the board
+	✔ 8x8 grid @done(23-04-29 00:30)
+	✔ Create pieces and place them on the board @done(23-04-29 01:15)
+- White starts playing. Moves a piece and only one piece
+	✔ Find the squares a piece can go @done(23-04-29 03:00)
+	- Player clicks the piece and target place to move
+	✔ Color / mark target cells piece can move @done(23-05-02 19:01)
+	- Illegal moves cannot be played
+	- En passant
+- Then black plays
+	- Turn system should be impelemented
+	- Only one color can be played in a turn
+- The first one to checkmate the opponent wins
+	- Detect checkmate
+	- Show game end info
+- Pawns can be promoted when they reach to other side of the board
+- App has a log of played moves. One line for each round for black and white
+- App shows which pieces taken by which player (+ material advantage)

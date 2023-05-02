@@ -1,0 +1,123 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	font-weight: 500;
+	color: #646cff;
+	text-decoration: inherit;
+}
+a:hover {
+	color: #535bf2;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+#app {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	border: 1px solid #eaeaea;
+}
+
+#middle-section {
+	display: flex;
+}
+
+#board {
+	width: 400px;
+	height: 400px;
+	position: relative;
+	/* To round the borders of the board, we need to hide the overflow */
+	overflow: hidden;
+}
+
+#board .square {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}
+
+#board .square.light {
+	background-color: #f0d9b5;
+}
+
+#board .square.dark {
+	background-color: #b58863;
+}
+
+#board .square.available-square {
+	box-shadow: inset 0 0 15px #118e3699;
+}
+
+#board .square.selected {
+	background-color: #fff670;
+	box-shadow: inset 0 0 0 3px #ffcd09;
+}
+
+#black-info, #white-info {
+}
+
+#moves {
+	width: 150px;
+	margin-left: 20px;
+	align-self: stretch;
+	background-color: #eee7d7;
+}
+
+#board, #moves {
+	border-radius: 5px;
+}
+
+.piece {
+	background-image: url('./pieces.svg');
+	background-repeat: no-repeat;
+	background-size: 300px 100px;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.piece.black {
+	background-position-y: -50px;
+}
+
+.piece.rook {
+	background-position-x: -200px;
+}
+
+.piece.knight {
+	background-position-x: -150px;
+}
+
+.piece.bishop {
+	background-position-x: -100px;
+}
+
+.piece.queen {
+	background-position-x: -50px;
+}
+
+.piece.king {
+	background-position-x: 0px;
+}
+
+.piece.pawn {
+	background-position-x: -250px;
+}
